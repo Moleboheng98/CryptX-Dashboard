@@ -1,22 +1,22 @@
-import React from 'react';
+import React from 'react'
 import {
   HomeIcon,
   ChartBarIcon,
   CreditCardIcon,
-  CashIcon,
+  BanknotesIcon,   // ✅ use BanknotesIcon instead of CashIcon
   CogIcon,
-  LogoutIcon,
-} from '@heroicons/react/outline';
+  ArrowRightOnRectangleIcon, // ✅ use ArrowRightOnRectangleIcon instead of LogoutIcon
+} from '@heroicons/react/24/outline'
 
 const navItems = [
   { label: 'Home', icon: HomeIcon },
   { label: 'Dashboard', icon: ChartBarIcon },
   { label: 'Transactions', icon: CreditCardIcon },
-  { label: 'Wallet', icon: CashIcon },
+  { label: 'Wallet', icon: BanknotesIcon },
   { label: 'Analytics', icon: ChartBarIcon },
   { label: 'Settings', icon: CogIcon },
-  { label: 'Logout', icon: LogoutIcon },
-];
+  { label: 'Logout', icon: ArrowRightOnRectangleIcon },
+]
 
 const Sidebar = () => {
   return (
@@ -34,12 +34,7 @@ const Sidebar = () => {
         ))}
       </nav>
     </aside>
-  );
-};
+  )
+}
 
-export default Sidebar;
-
-
-
-
-
+export default Sidebar

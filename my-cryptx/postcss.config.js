@@ -1,10 +1,10 @@
-// postcss.config.js
-module.exports = {
+export default {
   plugins: {
-    tailwindcss: {},
+    '@tailwindcss/postcss': {},
     autoprefixer: {},
   },
-};
+}
+
 
 
 
